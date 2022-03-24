@@ -1,0 +1,43 @@
+numeric varchar
+
+create table custemer(cid numeric(3),cnmae varchar(20)not null,rating numeric(2)not null ,age numeric(3)not null,primary key(cid)); 
+
+INSERT INTO custemer(cid,cname,rating,age) values (159,'jeeva',5,30);
+
+
+
+
+
+
+
+
+
+
+MariaDB [kali]> create table custemer(cid numeric(3),cname varchar(20)not null,rating numeric(2)not null ,age numeric(3)not null,primary key(cid));
+Query OK, 0 rows affected (0.024 sec)
+
+MariaDB [kali]> INSERT INTO custemer(cid,cname,rating,age) values (159,'jeeva',5,30);
+Query OK, 1 row affected (0.005 sec)
+
+MariaDB [kali]> select * from custemer;
++-----+-----------+--------+-----+
+| cid | cname     | rating | age |
++-----+-----------+--------+-----+
+|  15 | devi      |     10 |  39 |
+|  21 | arun      |      1 |  38 |
+|  30 | sanjay    |      5 |  33 |
+|  44 | kuppusamy |      4 |  30 |
+|  47 | anu       |      2 |  50 |
+|  95 | muthu     |      2 |  46 |
+| 108 | mani      |      9 |  35 |
+| 117 | marimuthu |      7 |  48 |
+| 125 | devi      |      7 |  48 |
+| 133 | nirmal    |      3 |  45 |
+| 159 | jeeva     |      5 |  30 |
++-----+-----------+--------+-----+
+11 rows in set (0.000 sec)
+
+MariaDB [kali]>
+
+
+
